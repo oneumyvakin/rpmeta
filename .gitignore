@@ -20,6 +20,8 @@ _cgo_export.*
 _testmain.go
 
 *.exe
+*.386
+*.amd64
 *.test
 *.prof
 .idea
