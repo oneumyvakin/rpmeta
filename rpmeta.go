@@ -85,14 +85,14 @@ type MetadataPackage struct {
 // MetadataVersion defines <version> structure:
 //     <version epoch="0" ver="0.0.1" rel="centos7.16070614"/>
 type MetadataVersion struct {
-	Epoch string `xml:"epoch"`
-	Ver   string `xml:"ver"`
-	Rel   string `xml:"rel"`
+	Epoch string `xml:"epoch,attr"`
+	Ver   string `xml:"ver,attr"`
+	Rel   string `xml:"rel,attr"`
 }
 
 // MetadataTime defines <time> structure:
 //     <time file="1467794790" build="1467794786"/>
 type MetadataTime struct {
-	File  string `xml:"file"`
-	Build string `xml:"build"`
+	File  string `xml:"file,attr"`
+	Build string `xml:"build,attr"`
 }
